@@ -7,5 +7,5 @@ public interface ICommand
 {
     public string Command { get; }
 
-    public Task ExecuteAsync(Message message, ITelegramBotClient telegramBotClient);
+    public Task ExecuteAsync(Message message, ITelegramBotClient botClient);
 }

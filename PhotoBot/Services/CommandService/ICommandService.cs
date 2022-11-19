@@ -1,7 +1,7 @@
 ﻿using PhotoBot.Commands;
 using Telegram.Bot.Types;
 
-namespace PhotoBot.Services;
+namespace PhotoBot.Services.CommandService;
 
 public interface ICommandService
 {

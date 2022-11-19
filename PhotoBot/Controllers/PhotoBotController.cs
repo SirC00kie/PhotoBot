@@ -1,10 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PhotoBot.Services;
+using PhotoBot.Services.CommandService;
 using Telegram.Bot;
 using Telegram.Bot.Types;
 
 namespace PhotoBot.Controllers;
 
+[Route("api/update")]
+[ApiController]
 public class PhotoBotController : ControllerBase
 {
     private readonly ITelegramBotClient _telegramBotClient;
