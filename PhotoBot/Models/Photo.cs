@@ -4,6 +4,10 @@ namespace PhotoBot.Models;
 
 public class Photo
 {
-    [JsonProperty("results", Required = Required.Always)]
-    public Results Results { get; set; } = null!;
+    [JsonProperty("alt_description", Required = Required.Always)]
+    public string Description { get; set; } = null!;
+    
+    [JsonProperty("urls", Required = Required.Always)]
+    public Urls Urls { get; set; } = null!;
+    
 }
